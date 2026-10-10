@@ -1,0 +1,14 @@
+# NitroMaster Pro Control Center — runtime dependencies
+PyQt6>=6.5
+psutil>=5.9
+py-cpuinfo>=9.0
+nvidia-ml-py>=12.535
+
+# Windows-only extras (guarded at import time)
+wmi>=1.5.1; sys_platform == 'win32'
+pywin32>=306; sys_platform == 'win32'
+pythonnet>=3.2.1; sys_platform == 'win32'
+comtypes>=1.4; sys_platform == 'win32'
+
+# Dev / CI
+pytest>=8.0
